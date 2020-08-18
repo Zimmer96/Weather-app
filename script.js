@@ -36,7 +36,7 @@ button.addEventListener("click",function () {
 
 function getResults(city) {
    
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`)
     .then(resp => resp.json())
     .then( data => {
         
